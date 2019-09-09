@@ -223,3 +223,8 @@ a {
         margin: 0;
     }
 }
+@media only screen and (max-width: 490px) {
+    
+    .education {
+        margin: 0 4em 3em 4em;
+    }

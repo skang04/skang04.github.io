@@ -23,7 +23,7 @@ body {
     margin: 0 4em 3em 4em;
 }
 .name {
-
+    font-weight: 400;
     font-size: 6em;
     text-align: left;
     display: flex;
@@ -225,10 +225,6 @@ a {
 }
 @media only screen and (max-width: 490px) {
     
-    .education {
-        margin: 0 4em 3em 4em;
-    }
-
     .about {
         margin: 0 4em 3em 4em;
     }

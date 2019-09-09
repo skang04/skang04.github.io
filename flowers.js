@@ -1,9 +1,4 @@
 var canvas;
-let duck;
-
-function preload() {
-  duck = loadImage('images/duck.png');
-}
 
 function windowResized() {
   resizeCanvas(windowWidth,windowHeight);
@@ -24,7 +19,7 @@ function setup() {
       if (mouseIsPressed) {
         background(255);
       }
-    // image(duck,mouseX, mouseY, 200, 200);
+   
   }
   
   function windowResized() {

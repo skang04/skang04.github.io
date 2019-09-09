@@ -187,7 +187,9 @@ a {
         padding-top: 50px;
 
     }
-
+    .about {
+        margin: 0 4em 3em 4em;
+    }
     .button {
         padding: 1em 1.4em;
     }
@@ -195,9 +197,7 @@ a {
 
 
 @media only screen and (max-width: 590px) {
-    .about {
-        margin: 0 4em 3em 4em;
-    }
+  
     .buttons {
         justify-content: flex-start;
         padding: 3em 0em 10em 0;

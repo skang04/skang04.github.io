@@ -1,27 +1,53 @@
 var canvas;
+var rainbow = 212;
+var x = 0;
+var y = 0;
+var disable;
+var sketch;
+
+
+
 
 function windowResized() {
-  resizeCanvas(windowWidth,windowHeight);
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,0);
-  canvas.parent('sketch')
-  canvas.style('z-index','-1');
+  canvas.position(0, 0);
+  canvas.parent('sketch');
+  canvas.style('z-index', '-1');
+
+  disable = createCheckbox('  Activate Bubbles', true);
+  disable.mousePressed(stopSketch);
+  disable.position(50,50);
+
+}
+
+function stopSketch(){
+  if (this.checked()){
+    background(255);
+    noLoop();
+  } else {
+    loop();
+  } 
+}
+
+function draw() {
+
+  rainbow++;
+  if (rainbow > 255) {
+    rainbow = 212;
   }
- 
-  
-  function draw() {
-    stroke(255, random(140,204), random(100,197));
-    strokeWeight(15);
-      line(mouseX,mouseY,pmouseX,pmouseY,);
-      if (mouseIsPressed) {
-        background(255);
-      }
-   
+
+  x = lerp(x, mouseX, .5);
+  y = lerp(y, mouseY, .5);
+
+  let d = dist(x, y, pmouseX, pmouseY);
+  ellipse(mouseX, mouseY, d, d);
+  noStroke();
+  fill(255, rainbow, 212);
+  if (mouseIsPressed) {
+    background(255);
   }
-  
-  function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-  }
+}

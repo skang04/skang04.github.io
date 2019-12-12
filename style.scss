@@ -1,0 +1,426 @@
+@import 'variable';
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: $blackColor;
+    background-color: $grayColor;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+h2 {
+    font-size: 2.25em;
+    letter-spacing: 0.32em;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.feedback>h1 {
+    display: block;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.button {
+    border: none;
+    letter-spacing: 5px;
+    padding: 1rem 1.5rem;
+    margin: 50px auto;
+    text-align: center;
+    text-decoration: none;
+    background: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+//main landing page and hero
+
+.landing-page {
+    padding: 50px 65px 120px 65px;
+    background-color: $blackColor;
+    display: flex;
+}
+
+.hero {
+    width: 100%;
+}
+
+.main-content {
+    margin-left: 45px;
+    width: 100%
+}
+
+.logo {
+    width: 195px;
+    height: 165px;
+}
+
+.main-content>h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: $grayColor;
+    margin-bottom: 40px;
+}
+
+.social>a>img {
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+.CTA {
+    font-size: 1.5em;
+    color: #f7c82d;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+    border-bottom: solid;
+
+}
+
+
+
+//about us section
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 85px;
+}
+
+.description>h1 {
+    margin: 0;
+}
+
+
+.image {
+    width: 60%;
+    height: 30vw;
+    margin: 0;
+    background-image: url('beque.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.description>h2 {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    font-size: 1.9em;
+}
+
+.about-us>p {
+    width: 50%;
+}
+
+
+
+
+//locations section
+
+.menu {
+    margin: 50px;
+}
+
+.menu>h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.highlight {
+    background-color: $blackColor;
+    color: $grayColor;
+    padding: 0 20px 0 35px;
+}
+
+
+// locations SF and Santa Clara
+
+.location {
+    display: flex;
+    justify-content: space-around;
+}
+
+.details {
+    width: 40%;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    background-color: lightblue;
+    margin-top: 80px;
+}
+
+
+//details 
+
+.info {
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.icons {
+    height: 1.5em;
+    margin: 5px 30px 0 0;
+}
+
+.address {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.address>a {
+    color: $blackColor;
+}
+
+.address>.icons {
+    height: 1.8em;
+}
+
+.hours {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.hours-details>h4 {
+    text-decoration: none;
+}
+
+.hours-details>p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.hours-columns {
+    display: flex;
+    width: 100%;
+}
+
+.hours-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+
+.phone {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+
+//footer section
+
+.footer {
+    background-color: $blackColor;
+    color: $grayColor;
+    padding: 100px 0 100px 0;
+    margin: 20px 0;
+}
+
+.footer>h2 {
+    margin-bottom: 20px;
+}
+
+.footer>.social {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin-right: 100px;
+}
+
+.footer>.social>img {
+    margin-right: 500px;
+}
+
+.footer>.anchors {
+    display: flex;
+    justify-content: center;
+    margin: 180px 0 50px 0;
+}
+
+.anchors>p {
+    padding: 20px;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1000px) {
+
+    .image {
+        width: 40vw;
+        height: 25vw;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 50vw;
+    }
+
+    .landing-page {
+        padding: 25px 25px 80px 25px;
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin: 10px 0 0 0;
+    }
+
+    .logo {
+        width: 130px;
+        margin: 0 auto;
+    }
+
+
+    //about us
+
+    .about-us {
+        margin: 50px 50px;
+        justify-content: center;
+    }
+
+    .description {
+        margin-left: 40px;
+        width: 45%;
+    }
+
+
+    //menu
+
+    .location {
+        flex-direction: column;
+    }
+
+    .details {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us>.image {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .description {
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    .description>h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .image {
+        width: 50vw;
+        height: 40vw;
+        background-color: pink;
+        margin: 0;
+    }
+
+    .feedback {
+        width: 80%;
+    }
+
+    textarea {
+        width: 85%;
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CTA {
+        margin-bottom: 20px;
+        border: none;
+        text-decoration: underline;
+    }
+
+    .main-content>h1 {
+        font-size: 1.9em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .menu>h2 {
+        margin: 30px 0 0 0;
+    }
+
+    .about-us {
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .description>h2 {
+        font-size: 1.7em;
+    }
+
+    .hours-columns {
+        flex-direction: column;
+    }
+
+    .hours-details {
+        margin-bottom: 20px;
+    }
+}
